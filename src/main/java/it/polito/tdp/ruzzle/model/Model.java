@@ -81,13 +81,13 @@ public class Model {
 		}
 		return false;
 	}
-
+	
 	public List<String> trovaTutte() {
 		List<String> tutte = new ArrayList<String>();
 		for(String parola: this.dizionario) {
-			parola=parola.toUpperCase();
-			if(parola.length()>1) {
-			if(this.trovaParola(parola)!=null ) {
+			parola = parola.toUpperCase();
+			if(parola.length() > 1) {
+			if(this.trovaParola(parola) != null ) {
 				tutte.add(parola);
 				}
 			}
